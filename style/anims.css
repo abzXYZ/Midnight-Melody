@@ -1,0 +1,103 @@
+@keyframes iconpop {
+    from{
+        background-size: 48px;
+    }
+    to{
+        background-size: 56px;
+    }
+}
+@keyframes logo-purpleglow {
+    from{
+        box-shadow: 0px 0px 0rem var(--logo-purple);
+    }
+    to{
+        box-shadow: 0px 0px 1rem var(--logo-purple), 0px 0px 1rem var(--logo-purple) inset;
+    }
+}
+@keyframes blueglow {
+    from{
+        box-shadow: 0px 0px 0rem var(--blue);
+    }
+    to{
+        box-shadow: 0px 0px 1rem var(--blue), 0px 0px 1rem var(--blue) inset;
+    }
+}
+@keyframes greenglow {
+    from{
+        box-shadow: 0px 0px 0rem var(--green);
+    }
+    to{
+        box-shadow: 0px 0px 1rem var(--green), 0px 0px 1rem var(--green) inset;
+    }
+}
+@keyframes pinkglow {
+    from{
+        box-shadow: 0px 0px 0rem var(--pink);
+    }
+    to{
+        box-shadow: 0px 0px 1rem var(--pink), 0px 0px 1rem var(--pink) inset;
+    }
+}
+@keyframes hot-pinkglow {
+    from{
+        box-shadow: 0px 0px 0rem var(--hot-pink);
+    }
+    to{
+        box-shadow: 0px 0px 1rem var(--hot-pink), 0px 0px 1rem var(--hot-pink) inset;
+    }
+}
+@keyframes redglow {
+    from{
+        box-shadow: 0px 0px 0rem var(--red);
+    }
+    to{
+        box-shadow: 0px 0px 1rem var(--red), 0px 0px 1rem var(--red) inset;
+    }
+}
+@keyframes purpleglow {
+    from{
+        box-shadow: 0px 0px 0rem var(--purple);
+    }
+    to{
+        box-shadow: 0px 0px 1rem var(--purple), 0px 0px 1rem var(--purple) inset;
+    }
+}
+@keyframes currentglow {
+    from{
+        box-shadow: 0px 0px 0rem var(--current-color);
+    }
+    to{
+        box-shadow: 0px 0px 1rem var(--current-color), 0px 0px 1rem var(--current-color) inset;
+    }
+}
+@keyframes whiteglow {
+    from{
+        box-shadow: 0px 0px 0rem white;
+    }
+    to{
+        box-shadow: 0px 0px 1rem white, 0px 0px 1rem white inset;
+    }
+}
+@keyframes dangerglow {
+    from{
+        box-shadow: 0px 0px 0rem red;
+    }
+    to{
+        box-shadow: 0px 0px 1rem red, 0px 0px 1rem red inset;
+    }
+}
+@keyframes getred {
+    to{
+        color: red;
+        border-color: red;
+    }
+}
+@keyframes miniiconpop {
+    from {
+        background-size: 100%;
+    }
+    to{
+        background-size: 115%;
+        background-position: center;
+    }
+}

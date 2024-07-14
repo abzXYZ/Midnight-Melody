@@ -1,0 +1,143 @@
+.thumbnail {
+  min-width: 250px;
+  min-height: 250px;
+  width: 20vw;
+  height: 20vw;
+  background-size: cover;
+  background-position: center;
+}
+input[type='range'] {
+  accent-color: var(--logo-purple);
+}
+#playerinfo {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  
+}
+#audioplayer {
+  width: auto;
+  display: flex;
+  flex-direction: flex;
+  align-items: center;
+  background-color: #222;
+  border-radius: 1rem;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+}
+#trackinfo {
+  width: 25%;
+}
+#trackcontrols {
+  width: 75%;
+}
+#top {
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+#trackprogress {
+  height: 1rem;
+  width: 100%;
+}
+#trackcontrol {
+  display: grid;
+  grid-auto-columns: auto auto auto;
+  grid-template-rows: auto auto;
+}
+#trackcontrols .primary {
+  width: 3rem;
+  height: 3rem;
+}
+#controls button {
+  border: 4px var(--current-color) solid;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  margin: 2px;
+  background-color: rgba(0,0,0,0);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#controls button:hover {
+  animation: logo-purpleglow 0.25s ease-out forwards;
+}
+#control {
+  background-image: url(../resources/icons/play.png);
+}
+#control.playing {
+  background-image: url(../resources/icons/pause.png);
+}
+#next, #prev {
+  background-image: url(../resources/icons/skip.png);
+}
+#prev {
+  transform: rotate(180deg);
+}
+#controls {
+  display: flex;
+  align-items: center;
+}
+#options {
+  display: flex;
+  align-items: center;
+}
+#options #audiovolume {
+  /*! width: 100px; */
+}
+#options img {
+  width: 36px;
+  height: 36px;
+}
+#fav, #mixtape {
+  background-size: cover;
+  background-position: center;
+}
+#fav {
+  border-color: var(--hot-pink);
+  background-image: url(../resources/icons/icons8-add-heart-48.png);
+}
+#fav:hover {
+  animation: miniiconpop 0.25s ease-out forwards, hot-pinkglow 0.25s ease-out forwards;
+}
+#fav.unlike {
+  background-image: url(../resources/icons/icons8-heart-48.png);
+}
+#fav.unlike:hover {
+  background-image: url(../resources/icons/icons8-broken-heart-48.png);
+}
+#fav.unlike:hover {
+  border-color: red;
+  animation: miniiconpop 0.25s ease-out forwards, dangerglow 0.25s ease-out forwards;
+}
+#mixtape {
+  border-color: var(--purple);
+}
+#mixtape:hover {
+  animation-name: purpleglow;
+}
+#mixtape:hover {
+  animation: miniiconpop 0.25s ease-out forwards, purpleglow 0.25s ease-out forwards;
+}
+#mixtape {
+  background-image: url(../resources/icons/icons8-add-cassette-48.png);
+}
+#top button {
+  animation-name: iconpop;
+}
+
+@media only screen and (max-width: 1000px) {
+  nav, main a[href="index.php"], #profile {
+    display: none;
+  }
+  body {
+    padding-top: 32px;
+  }
+  #content {
+    width: calc(100vw - 64px - 4rem);
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #audiovolume {
+    width: 110px;
+  }
+}

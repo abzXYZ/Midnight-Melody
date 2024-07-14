@@ -1,0 +1,16 @@
+#pfp {
+    width: 128px;
+    height: 128px;
+    border-radius: 64px;
+    margin: 1rem 2rem;
+}
+.profile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+label[for="pfpurl"] {
+    cursor: help;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
